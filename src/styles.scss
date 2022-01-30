@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import 'src/app/shared/styles/theme.scss';
+
+// Media Queries
+$xsm: 300px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1600px;
+$xxxxl: 2000px;
+$xxxxxl: 2400px;
+
+$blue-color: #222b45;
+$gold-color: #DDC179;
+$medium-gold-color: #FFDE8C;
+$light-gold-color: #FFE6A6;
+
+html, body {
+  height: 100vh;
+
+  font-family: Roboto, "Open Sans"!important;
+  background-color: $background-basic-color-4;
+  color: $text-basic-color;
+
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar { width: $scrollbar-width; }
+  ::-webkit-scrollbar-track { box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  ::-webkit-scrollbar-thumb { background-color: $scrollbar-background-color; outline: $scrollbar-color; }
+}
