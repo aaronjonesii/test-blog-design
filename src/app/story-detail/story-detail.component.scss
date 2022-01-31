@@ -1,0 +1,54 @@
+@import 'src/styles';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .story-title {
+    font-size: 2rem;
+    color: $gold-color;
+    margin: 2rem;
+  }
+  .tags {
+    display: flex;
+    margin: 2rem;
+    .tag:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  .story {
+    background: $background-basic-color-3;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    .story-content {
+      padding: 4rem 2.5rem;
+    }
+    .story-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100px;
+      background: $background-basic-color-2;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,151a30+65&0+0,1+65 */
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(21,26,48,1) 25%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(21,26,48,1) 25%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(21,26,48,1) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#151a30',GradientType=0 ); /* IE6-9 */
+
+
+
+      position: sticky;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      button {
+        height: min-content;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
